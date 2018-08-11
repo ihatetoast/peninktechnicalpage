@@ -1,0 +1,41 @@
+// font-family: 'Lora', serif;
+// font-family: 'Muli', sans-serif; 
+// font-family: 'Homemade Apple', cursive;
+
+// SASS style sheet */
+// Palette URL: http://paletton.com/#uid=33i0u0kCSEEl4IzqZFAFcrBHPlz */
+
+$teal0: #00B8B8;	// background, paper color, some pen ink  */
+$teal1: #43C4C4; //lines of paper
+$teal2: #d6f3f3; //paper
+$teal3: #008484;
+$teal4: #006767; // link and ink
+
+$yellow0: #FFAA00;	// nav, button, etc/
+$yellow1: #FFC757; 
+$yellow2: #FFB728;
+$yellow3: #DC9300;
+$yellow4: #AC7300;
+
+$red0: #FF0000;	// note, line of paper as ink */
+$red1: #FF5757;
+$red2: #FF2828; //footer
+$red3: #DC0000;
+$red4: #AC0000;
+
+
+* {
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+
+}
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#main-doc {
+  flex: 1;
+}
