@@ -52,15 +52,20 @@ table {
   font-family: 'Muli', sans-serif; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #006767; }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Lora', serif; }
 
 p {
-  line-height: 1.2em; }
+  line-height: 1.2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
 
-#site {
+body {
   background: url("../assets/paper_fibers/paper_fibers.png");
   display: flex;
   flex-direction: column;
@@ -68,25 +73,76 @@ p {
 
 #navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center; }
+  flex-direction: column; }
   #navbar header {
-    font-family: 'Homemade Apple', cursive;
+    font-family: 'Homemade Apple', 'Muli', 'Lora', serif;
     font-size: 2em;
-    color: #043399; }
+    color: #006767;
+    margin: 1em auto; }
+
+#nav-list {
+  width: 100%; }
 
 .nav-link li {
-  font-family: 'Lora', serif; }
+  border-color: #00c3c3;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-right-width: 2px;
+  border-left-width: 2px;
+  border-style: solid;
+  font-family: 'Lora', serif;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0.25em; }
 
 .main-section header {
+  color: #006767;
   font-family: 'Lora', serif;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: bold;
-  margin-top: 0.5em;
+  margin-top: 1em;
   margin-bottom: 0.2em; }
+.main-section h1 {
+  font-family: 'Lora', serif; }
 
-@media only screen and (min-width: 768px) {
-  #site {
-    flex-direction: row; } }
+.main-section-list h2 {
+  font-weight: bold;
+  margin-bottom: 0.25em; }
+.main-section-list li {
+  margin-top: 0.5em; }
+  .main-section-list li p {
+    margin-left: 1em; }
+
+code {
+  background: url("../assets/lined_paper/lined_paper.png");
+  display: block;
+  width: 80%;
+  margin-left: 10%; }
+
+.pen-ink {
+  font-family: 'Homemade Apple', cursive; }
+
+.typed {
+  font-family: 'Lora', serif; }
+
+@media only screen and (min-width: 769px) {
+  body {
+    flex-direction: row; }
+
+  #navbar {
+    flex-basis: 13em;
+    margin-right: 1em; }
+    #navbar header {
+      font-size: 1.5em;
+      margin: 1em auto; }
+
+  .nav-link li {
+    font-size: 1em;
+    text-align: left;
+    padding: 1em 0.25em; }
+
+  #main-doc {
+    flex-basis: 70%;
+    margin-top: 3.6em; } }
 
 /*# sourceMappingURL=style.css.map */
