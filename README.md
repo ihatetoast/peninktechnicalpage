@@ -10,9 +10,9 @@ The look of this is influenced by the type of website (technical document) and i
 
 I choose to publish and deploy as I go:
 Surge:
-[Letter Writing documentation]("http://www.ihatetoast-letter-writing.surge.sh/")
+[Letter Writing documentation](http://www.ihatetoast-letter-writing.surge.sh/)
 Codepen:
-[Letter Writing documentation]("https://codepen.io/ihatetoast/full/qKodzq/")
+[Letter Writing documentation](https://codepen.io/ihatetoast/full/qKodzq/)
 
 ##Toolbox:
 
