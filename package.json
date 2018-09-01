@@ -1,0 +1,19 @@
+{
+  "name": "tech_doc_page",
+  "version": "1.0.0",
+  "description": "technical document on how to write a letter",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihatetoast/peninktechnicalpage.git"
+  },
+  "author": "Katy Cassidy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ihatetoast/peninktechnicalpage/issues"
+  },
+  "homepage": "https://github.com/ihatetoast/peninktechnicalpage#readme"
+}

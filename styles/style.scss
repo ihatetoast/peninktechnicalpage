@@ -2,10 +2,11 @@
 // font-family: 'Muli', sans-serif; 
 // font-family: 'Homemade Apple', cursive;
 
-// SASS style sheet */
-// Palette URL: http://paletton.com/#uid=33i0u0kCSEEl4IzqZFAFcrBHPlz */
 
-$teal0: #00B8B8;	// background, paper color, some pen ink  */
+// Palette URL: http://paletton.com/#uid=33i0u0kCSEEl4IzqZFAFcrBHPlz */
+@import "_reset.scss";
+
+$ink: #043399;	// background, paper color, some pen ink  */
 $teal1: #43C4C4; //lines of paper
 $teal2: #d6f3f3; //paper
 $teal3: #008484;
@@ -23,19 +24,56 @@ $red2: #FF2828; //footer
 $red3: #DC0000;
 $red4: #AC0000;
 
-
+//GENERAL
 * {
   margin: 0;
   padding: 0; 
   box-sizing: border-box;
-
+  font-family: 'Muli', sans-serif; 
+}a {
+  text-decoration: none;
 }
-.site {
-  display: flex;
-  min-height: 100vh;
+h1, h2, h3 {
+  font-family: 'Lora', serif;
+}
+p{line-height: 1.2em;}
+#site{
+    background: url('../assets/paper_fibers/paper_fibers.png');
+  display:flex;
   flex-direction: column;
+  padding: 1em;
 }
 
-#main-doc {
-  flex: 1;
+//NAV SECTION
+#navbar{
+display: flex;
+flex-direction: column;
+align-items: center;
+header{
+  font-family: 'Homemade Apple', cursive;
+  font-size: 2em;
+  color: $ink;
+}
+}
+.nav-link{
+  li {
+    font-family: 'Lora', serif;
+  }
+}
+
+//MAIN SECTION
+.main-section{
+  header{
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  #site{
+    flex-direction: row; 
+  }
 }
