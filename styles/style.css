@@ -65,7 +65,7 @@ p {
   margin-top: 0.5em;
   margin-bottom: 0.5em; }
 
-body {
+#site {
   background: url("../assets/paper_fibers/paper_fibers.png");
   display: flex;
   flex-direction: column;
@@ -81,19 +81,20 @@ body {
     margin: 1em auto; }
 
 #nav-list {
+  background-color: #006767;
   width: 100%; }
 
 .nav-link li {
-  border-color: #00c3c3;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
-  border-right-width: 2px;
-  border-left-width: 2px;
-  border-style: solid;
-  font-family: 'Lora', serif;
-  font-size: 1.5em;
+  background-color: #006767;
+  color: #edf9f9;
+  padding: 0.8em 0;
   text-align: center;
-  padding: 0.25em; }
+  text-transform: uppercase;
+  transition: background-color 0.2s; }
+
+.nav-link li:hover {
+  background-color: #edf9f9;
+  color: #006767; }
 
 .main-section header {
   color: #006767;
@@ -126,7 +127,7 @@ code {
   font-family: 'Lora', serif; }
 
 @media only screen and (min-width: 769px) {
-  body {
+  #site {
     flex-direction: row; }
 
   #navbar {

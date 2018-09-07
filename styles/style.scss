@@ -6,7 +6,7 @@
 @import '_reset.scss';
 
 //lines of paper
-$paper: #d6f3f3; //paper
+$paper: #edf9f9; //paper
 $lines: #00c3c3;
 // link and ink
 $ink: #006767;
@@ -45,7 +45,16 @@ p {
   margin-bottom: 0.5em;
 }
 //after css pen is done, convert body to #site.
-body {
+// body {
+//   //bg for vs code
+//   background: url('../assets/paper_fibers/paper_fibers.png');
+//   //bg for codepen
+//   // background-color:#eff1f5;
+//   display: flex;
+//   flex-direction: column;
+//   padding: 1em;
+// }
+#site {
   //bg for vs code
   background: url('../assets/paper_fibers/paper_fibers.png');
   //bg for codepen
@@ -68,23 +77,21 @@ body {
   }
 }
 #nav-list {
+  background-color: $ink;
   width: 100%;
 }
-.nav-link {
-  li {
-    border-color: $lines;
-    border-top-width: 1px;
-    border-bottom-width: 1px;
-    border-right-width: 2px;
-    border-left-width: 2px;
-    border-style: solid;
-    font-family: 'Lora', serif;
-    font-size: 1.5em;
-    text-align: center;
-    padding: 0.25em;
-  }
+.nav-link li {
+  background-color: #006767;
+  color: $paper;
+  padding: 0.8em 0;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.2s;
 }
-
+.nav-link li:hover {
+  background-color: $paper;
+  color: $ink;
+}
 //MAIN SECTION
 .main-section {
   header {
@@ -124,10 +131,12 @@ code {
   font-family: 'Lora', serif;
 }
 @media only screen and (min-width: 769px) {
-  body {
+  // body {
+  //   flex-direction: row;
+  // }
+  #site {
     flex-direction: row;
   }
-
   #navbar {
     flex-basis: 13em;
     margin-right: 1em;
