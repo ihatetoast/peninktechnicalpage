@@ -110,6 +110,22 @@ p {
   h2 {
     font-weight: bold;
     margin-bottom: 0.25em;
+    text-transform: uppercase;
+  }
+  li {
+    margin-top: 0.5em;
+    p {
+      margin-left: 1em;
+    }
+  }
+}
+.second-tier-list {
+  margin-left: 1em;
+  h2 {
+    color: $ink;
+    font-weight: 200;
+    margin-bottom: 0.1em;
+    text-transform: capitalize;
   }
   li {
     margin-top: 0.5em;
@@ -121,8 +137,8 @@ p {
 code {
   background: url('../assets/lined_paper/lined_paper.png');
   display: block;
-  width: 80%;
-  margin-left: 10%;
+  font-size: 0.5em;
+  width: 100%;
 }
 .pen-ink {
   font-family: 'Homemade Apple', cursive;
@@ -156,5 +172,10 @@ code {
   #main-doc {
     flex-basis: 70%;
     margin-top: 3em;
+  }
+  code {
+    font-size: 1em;
+    width: 80%;
+    margin-left: 10%;
   }
 }
