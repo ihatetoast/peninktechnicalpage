@@ -1,27 +1,24 @@
 // font-family: 'Lora', serif;
 // font-family: 'Muli', sans-serif;
 // font-family: 'Homemade Apple', cursive;
-
 // Palette URL: http://paletton.com/#uid=33i0u0kCSEEl4IzqZFAFcrBHPlz */
 @import '_reset.scss';
-
 //lines of paper
 $paper: #edf9f9; //paper
 $lines: #00c3c3;
 // link and ink
 $ink: #006767;
-
 $yellow0: #ffaa00; // nav, button, etc/
 $yellow1: #ffc757;
 $yellow2: #ffb728;
 $yellow3: #dc9300;
 $yellow4: #ac7300;
-
 $red0: #ff0000; // note, line of paper as ink */
 $red1: #ff5757;
 $red2: #ff2828; //footer
 $red3: #dc0000;
 $red4: #ac0000;
+$red5: #fab0b0;
 
 //GENERAL
 * {
@@ -30,20 +27,24 @@ $red4: #ac0000;
   box-sizing: border-box;
   font-family: 'Muli', sans-serif;
 }
+
 a {
   text-decoration: none;
   color: $ink;
 }
+
 h1,
 h2,
 h3 {
   font-family: 'Lora', serif;
 }
+
 p {
   line-height: 1.2em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
+
 //after css pen is done, convert body to #site.
 // body {
 //   //bg for vs code
@@ -64,118 +65,338 @@ p {
   padding: 1em;
 }
 
-//NAV SECTION
+//**************************//
+//        NAVIGATION        //
+//**************************//
 #navbar {
   display: flex;
   flex-direction: column;
-
-  header {
-    font-family: 'Homemade Apple', 'Muli', 'Lora', serif;
-    font-size: 2em;
-    color: $ink;
-    margin: 1em auto;
-  }
+  align-items: center;
 }
+
+#doc-title {
+  font-family: 'Homemade Apple', 'Muli', 'Lora', serif;
+  font-size: 1.3em;
+  color: $ink;
+  margin: 1em auto;
+}
+
 #nav-list {
-  background-color: $ink;
+  background-color: #006767;
   width: 100%;
 }
+
 .nav-link li {
   background-color: #006767;
+  font-size: 0.7em;
   color: $paper;
   padding: 0.8em 0;
   text-align: center;
   text-transform: uppercase;
   transition: background-color 0.2s;
 }
+
 .nav-link li:hover {
   background-color: $paper;
   color: $ink;
 }
-//MAIN SECTION
+
+//**************************//
+//         MAIN             //
+//**************************//
 .main-section {
   header {
     color: $ink;
     font-family: 'Lora', serif;
-    font-size: 1.5em;
+    font-size: 1.1em;
     font-weight: bold;
     margin-top: 1em;
     margin-bottom: 0.2em;
   }
+
   h1 {
     font-family: 'Lora', serif;
   }
 }
+
 .main-section-list {
   h2 {
     font-weight: bold;
     margin-bottom: 0.25em;
     text-transform: uppercase;
   }
+
   li {
     margin-top: 0.5em;
+
     p {
       margin-left: 1em;
     }
   }
 }
+
 .second-tier-list {
   margin-left: 1em;
+
   h2 {
     color: $ink;
     font-weight: 200;
     margin-bottom: 0.1em;
     text-transform: capitalize;
   }
+
   li {
     margin-top: 0.5em;
+
     p {
       margin-left: 1em;
     }
   }
 }
+
 code {
   background: url('../assets/lined_paper/lined_paper.png');
   display: block;
   font-size: 0.5em;
   width: 100%;
 }
+
 .pen-ink {
   font-family: 'Homemade Apple', cursive;
 }
+
 .typed {
   font-family: 'Lora', serif;
 }
+
+img {
+  width: 80%;
+  margin-left: 10%;
+}
+
+//**************************//
+//         CARDS            //
+//**************************//
+.cards {
+  position: relative;
+  height: 9em;
+  width: 16em;
+  margin-bottom: 1em;
+}
+
+.card,
+.postcard {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 3px 5px 10px 1px grey;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+// POSTCARD
+.postcard-text,
+.message-block {
+  font-size: 0.6em;
+  font-family: 'Homemade Apple', cursive;
+  color: $ink;
+}
+
+.message-block {
+  position: absolute;
+  line-height: 1.4em;
+  top: 4.3%;
+  left: 3%;
+  width: 45%;
+}
+
+.address-block {
+  position: absolute;
+  top: 10%;
+  height: 80%;
+  left: 50%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left-color: $yellow4;
+  border-left-width: 1px;
+  border-left-style: solid;
+}
+
+.stamp-base {
+  position: absolute;
+  width: 13%;
+  height: 27%;
+  top: 2%;
+  right: 2%;
+  border: 1px dotted black;
+}
+
+.stamp-background {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  background: $red5;
+}
+
+.stamp-background::after {
+  content: "Forever";
+  position: absolute;
+  color: #8227ad;
+  top: 78%;
+  left: 5%;
+  font-size: 8px;
+  font-variant: small-caps;
+}
+
+.pear-base {
+  position: absolute;
+  top: 13%;
+  left: 23%;
+  width: 54%;
+  height: 80%;
+  background-color: greenyellow;
+  border-radius: 60% 60% 50% 50% / 70% 70% 50% 50%;
+}
+
+.pear-bottom {
+  position: absolute;
+  bottom: 0%;
+  left: -9%;
+  width: 119%;
+  height: 70%;
+  background-color: greenyellow;
+  border-radius: 50%;
+}
+
+.stem {
+  position: absolute;
+  top: -10%;
+  left: 51%;
+  width: 15%;
+  height: 22%;
+  border-radius: 50%;
+  box-shadow: -1px -1px 0 0 brown;
+}
+
+.leaf {
+  position: absolute;
+  top: 9%;
+  left: 18%;
+  width: 53%;
+  height: 25%;
+  border-radius: 50%;
+  box-shadow: -4px -4px 0 0 #37842d;
+}
+
+//**************************//
+//      MEDIA QUERIES       //
+//**************************//
+@media only screen and (min-width: 321px) {
+  #nav-list {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 424px) {
+  #nav-list {
+    width: 20em;
+  }
+
+  .nav-link {
+    li {
+      font-size: 1em;
+    }
+  }
+
+  .cards {
+    height: 12em;
+    width: 21.3em;
+  }
+
+  .message-block {
+    font-size: 0.6em;
+    line-height: 2.2em;
+  }
+
+  .postcard-text {
+    font-size: 0.8em;
+  }
+
+  .stamp-background::after {
+    top: 78%;
+    left: 2%;
+    font-size: 12px;
+  }
+}
+
 @media only screen and (min-width: 769px) {
+
   // body {
   //   flex-direction: row;
   // }
   #site {
     flex-direction: row;
   }
+
   #navbar {
     flex-basis: 13em;
     margin-right: 1em;
-    header {
-      font-size: 1.5em;
-
-      margin: 1em auto;
-    }
   }
+
+  #doc-title {
+    font-size: 1.6em;
+  }
+
+  #nav-list {
+    width: 100%;
+  }
+
   .nav-link {
     li {
       font-size: 1em;
       text-align: left;
-      padding: 1em 0.25em;
+      padding: 1.25em 0.75em;
     }
   }
+
   #main-doc {
     flex-basis: 70%;
     margin-top: 3em;
   }
+
+  .main-section {
+    header {
+      font-size: 1.5em;
+    }
+  }
+
   code {
     font-size: 1em;
     width: 80%;
     margin-left: 10%;
+  }
+
+  .cards {
+    height: 16.87em;
+    width: 30em;
+  }
+
+  .message-block {
+    font-size: 0.8em;
+    line-height: 2.5em;
+  }
+
+  .postcard-text {
+    font-size: 1em;
+  }
+
+  .stamp-background::after {
+    top: 78%;
+    left: 2%;
+    font-size: 17px;
   }
 }

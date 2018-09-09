@@ -73,12 +73,14 @@ p {
 
 #navbar {
   display: flex;
-  flex-direction: column; }
-  #navbar header {
-    font-family: 'Homemade Apple', 'Muli', 'Lora', serif;
-    font-size: 2em;
-    color: #006767;
-    margin: 1em auto; }
+  flex-direction: column;
+  align-items: center; }
+
+#doc-title {
+  font-family: 'Homemade Apple', 'Muli', 'Lora', serif;
+  font-size: 1.3em;
+  color: #006767;
+  margin: 1em auto; }
 
 #nav-list {
   background-color: #006767;
@@ -86,6 +88,7 @@ p {
 
 .nav-link li {
   background-color: #006767;
+  font-size: 0.7em;
   color: #edf9f9;
   padding: 0.8em 0;
   text-align: center;
@@ -99,7 +102,7 @@ p {
 .main-section header {
   color: #006767;
   font-family: 'Lora', serif;
-  font-size: 1.5em;
+  font-size: 1.1em;
   font-weight: bold;
   margin-top: 1em;
   margin-bottom: 0.2em; }
@@ -139,6 +142,137 @@ code {
 .typed {
   font-family: 'Lora', serif; }
 
+img {
+  width: 80%;
+  margin-left: 10%; }
+
+.cards {
+  position: relative;
+  height: 9em;
+  width: 16em;
+  margin-bottom: 1em; }
+
+.card,
+.postcard {
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 3px 5px 10px 1px grey;
+  position: absolute;
+  height: 100%;
+  width: 100%; }
+
+.postcard-text,
+.message-block {
+  font-size: 0.6em;
+  font-family: 'Homemade Apple', cursive;
+  color: #006767; }
+
+.message-block {
+  position: absolute;
+  line-height: 1.4em;
+  top: 4.3%;
+  left: 3%;
+  width: 45%; }
+
+.address-block {
+  position: absolute;
+  top: 10%;
+  height: 80%;
+  left: 50%;
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left-color: #ac7300;
+  border-left-width: 1px;
+  border-left-style: solid; }
+
+.stamp-base {
+  position: absolute;
+  width: 13%;
+  height: 27%;
+  top: 2%;
+  right: 2%;
+  border: 1px dotted black; }
+
+.stamp-background {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  top: 5%;
+  left: 5%;
+  background: #fab0b0; }
+
+.stamp-background::after {
+  content: "Forever";
+  position: absolute;
+  color: #8227ad;
+  top: 78%;
+  left: 5%;
+  font-size: 8px;
+  font-variant: small-caps; }
+
+.pear-base {
+  position: absolute;
+  top: 13%;
+  left: 23%;
+  width: 54%;
+  height: 80%;
+  background-color: greenyellow;
+  border-radius: 60% 60% 50% 50% / 70% 70% 50% 50%; }
+
+.pear-bottom {
+  position: absolute;
+  bottom: 0%;
+  left: -9%;
+  width: 119%;
+  height: 70%;
+  background-color: greenyellow;
+  border-radius: 50%; }
+
+.stem {
+  position: absolute;
+  top: -10%;
+  left: 51%;
+  width: 15%;
+  height: 22%;
+  border-radius: 50%;
+  box-shadow: -1px -1px 0 0 brown; }
+
+.leaf {
+  position: absolute;
+  top: 9%;
+  left: 18%;
+  width: 53%;
+  height: 25%;
+  border-radius: 50%;
+  box-shadow: -4px -4px 0 0 #37842d; }
+
+@media only screen and (min-width: 321px) {
+  #nav-list {
+    width: 80%; } }
+@media only screen and (min-width: 424px) {
+  #nav-list {
+    width: 20em; }
+
+  .nav-link li {
+    font-size: 1em; }
+
+  .cards {
+    height: 12em;
+    width: 21.3em; }
+
+  .message-block {
+    font-size: 0.6em;
+    line-height: 2.2em; }
+
+  .postcard-text {
+    font-size: 0.8em; }
+
+  .stamp-background::after {
+    top: 78%;
+    left: 2%;
+    font-size: 12px; } }
 @media only screen and (min-width: 769px) {
   #site {
     flex-direction: row; }
@@ -146,22 +280,44 @@ code {
   #navbar {
     flex-basis: 13em;
     margin-right: 1em; }
-    #navbar header {
-      font-size: 1.5em;
-      margin: 1em auto; }
+
+  #doc-title {
+    font-size: 1.6em; }
+
+  #nav-list {
+    width: 100%; }
 
   .nav-link li {
     font-size: 1em;
     text-align: left;
-    padding: 1em 0.25em; }
+    padding: 1.25em 0.75em; }
 
   #main-doc {
     flex-basis: 70%;
     margin-top: 3em; }
 
+  .main-section header {
+    font-size: 1.5em; }
+
   code {
     font-size: 1em;
     width: 80%;
-    margin-left: 10%; } }
+    margin-left: 10%; }
+
+  .cards {
+    height: 16.87em;
+    width: 30em; }
+
+  .message-block {
+    font-size: 0.8em;
+    line-height: 2.5em; }
+
+  .postcard-text {
+    font-size: 1em; }
+
+  .stamp-background::after {
+    top: 78%;
+    left: 2%;
+    font-size: 17px; } }
 
 /*# sourceMappingURL=style.css.map */
