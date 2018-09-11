@@ -343,7 +343,11 @@ cite {
   .stamp-background::after {
     top: 78%;
     left: 2%;
-    font-size: 12px; } }
+    font-size: 12px; }
+
+  .address li {
+    font-size: 1em;
+    margin-bottom: 0.3em; } }
 @media only screen and (min-width: 769px) {
   p {
     font-size: 1.2em; }
@@ -396,6 +400,10 @@ cite {
   .stamp-background::after {
     top: 78%;
     left: 2%;
-    font-size: 17px; } }
+    font-size: 17px; }
+
+  .address li {
+    font-size: 1.2em;
+    margin-bottom: 0.5em; } }
 
 /*# sourceMappingURL=style.css.map */
