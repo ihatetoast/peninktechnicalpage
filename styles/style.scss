@@ -364,6 +364,17 @@ cite {
   font-size: 0.7em;
 }
 
+//ENVELOPES
+.address {
+  margin-left: 1em;
+  font-weight: bold;
+
+  li {
+    font-size: 0.75em;
+    margin-bottom: 0.2em;
+  }
+}
+
 //**************************//
 //      MEDIA QUERIES       //
 //**************************//

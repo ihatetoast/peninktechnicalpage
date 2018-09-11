@@ -305,6 +305,13 @@ cite {
   margin-left: 1.6em;
   font-size: 0.7em; }
 
+.address {
+  margin-left: 1em;
+  font-weight: bold; }
+  .address li {
+    font-size: 0.75em;
+    margin-bottom: 0.2em; }
+
 @media only screen and (min-width: 321px) {
   #nav-list {
     width: 80%; } }
