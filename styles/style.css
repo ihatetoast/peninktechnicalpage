@@ -61,6 +61,7 @@ h3 {
   font-family: 'Lora', serif; }
 
 p {
+  font-size: 0.8em;
   line-height: 1.2em;
   margin-top: 0.5em;
   margin-bottom: 0.5em; }
@@ -161,6 +162,43 @@ img {
   height: 100%;
   width: 100%; }
 
+.card-message-block-right,
+.card-message-block-left {
+  position: absolute;
+  width: 45%; }
+
+.card-message-block-right {
+  left: 50%;
+  top: 32%; }
+
+.card-text-left,
+.card-text-right {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 0.6em;
+  color: #006767; }
+
+.card-text-left {
+  line-height: 1.6em; }
+
+.card-text-right {
+  line-height: 1.2em; }
+
+.card-outside {
+  box-shadow: 3px 5px 10px 1px grey;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: url(../assets/card_outside.svg);
+  background-size: cover; }
+
+.card-inside {
+  background: url(../assets/card_inside.svg);
+  background-size: cover; }
+
+.postcard-back {
+  background: url(../assets/aus_postcard.svg);
+  background-size: cover; }
+
 .postcard-text,
 .message-block {
   font-size: 0.6em;
@@ -248,10 +286,32 @@ img {
   border-radius: 50%;
   box-shadow: -4px -4px 0 0 #37842d; }
 
+blockquote {
+  background: #edf9f9;
+  border-radius: 2px; }
+
+blockquote p {
+  margin: 0;
+  padding: 1em; }
+
+blockquote p::before {
+  content: '\201C'; }
+
+blockquote p::after {
+  content: '\201D'; }
+
+cite {
+  font-style: italic;
+  margin-left: 1.6em;
+  font-size: 0.7em; }
+
 @media only screen and (min-width: 321px) {
   #nav-list {
     width: 80%; } }
 @media only screen and (min-width: 424px) {
+  p {
+    font-size: .9em; }
+
   #nav-list {
     width: 20em; }
 
@@ -261,6 +321,10 @@ img {
   .cards {
     height: 12em;
     width: 21.3em; }
+
+  .card-text-left,
+  .card-text-right {
+    font-size: 0.8em; }
 
   .message-block {
     font-size: 0.6em;
@@ -274,6 +338,9 @@ img {
     left: 2%;
     font-size: 12px; } }
 @media only screen and (min-width: 769px) {
+  p {
+    font-size: 1.2em; }
+
   #site {
     flex-direction: row; }
 
@@ -308,9 +375,13 @@ img {
     height: 16.87em;
     width: 30em; }
 
+  .card-text-left,
+  .card-text-right {
+    font-size: 1.1em; }
+
   .message-block {
     font-size: 0.8em;
-    line-height: 2.5em; }
+    line-height: 2.3em; }
 
   .postcard-text {
     font-size: 1em; }

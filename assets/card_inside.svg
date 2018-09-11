@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="616px" height="348px" viewBox="0 0 616 348" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>inside</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M308,0.5 L308,348" id="path-1"></path>
+        <filter x="-450.0%" y="-2.0%" width="1000.0%" height="105.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="inside" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-4" fill="#FFFFFC" fill-rule="nonzero" x="0" y="0" width="616" height="348"></rect>
+        <text id="Happy-6th-birthday!" font-family="AmericanTypewriter-CondensedBold, American Typewriter" font-size="24" font-style="condensed" font-weight="bold" letter-spacing="5.33333349" fill="#000000">
+            <tspan x="322.489332" y="91">Happy 6th birthday!</tspan>
+        </text>
+        <g id="Line" stroke-linecap="square" fill-rule="nonzero">
+            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+            <use stroke="#D4D3D1" stroke-width="1" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

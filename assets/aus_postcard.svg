@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="616px" height="348px" viewBox="0 0 616 348" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#060605" stroke-width="4" fill="#FFFFFF" fill-rule="nonzero" stroke-linecap="round" x="36" y="20" width="544" height="309"></rect>
+        <path d="M415.5,323 C425.164983,323 433.605469,303.541184 433.605469,294.152344 C433.605469,284.763503 396.660156,279.611159 396.660156,289 C396.660156,298.388841 405.835017,323 415.5,323 Z" id="tazzie" fill="#0101A1" fill-rule="nonzero"></path>
+        <path d="M306.35835,221.475296 C319.391958,228.703334 363.60142,278.463604 389.378898,278.463604 C450.558285,278.463604 450.558285,238.420865 458.81176,221.475296 C477.701449,182.692055 423.439545,75.5371605 376.787167,35.5808109 C366.581355,26.8398416 376.787167,120.223578 337.007065,83.2584887 C320.011448,67.4655566 334.27713,41.7102167 300.974148,41.7102167 C275.775028,41.7102167 247.973468,78.9231455 215.26974,104.853824 C192.603797,122.825577 159.857736,116.533734 156.535457,134.905299 C150.576798,167.855541 156.00567,211.72457 163.671018,232.520804 C182.651091,284.014101 243.788978,186.776249 306.35835,221.475296 Z" id="oz" fill="#0101A1" fill-rule="nonzero"></path>
+        <text id="greetings" transform="translate(306.895998, 178.555447) rotate(-27.000000) translate(-306.895998, -178.555447) " font-family="AmericanTypewriter-CondensedBold, American Typewriter" font-size="48" font-style="condensed" font-weight="bold" letter-spacing="8.64000034" fill="#ED0D0D">
+            <tspan x="52.1119947" y="194.055447">Greetings from Oz!</tspan>
+        </text>
+    </g>
+</svg>
